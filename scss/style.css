@@ -85,7 +85,7 @@ svg {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  src: url("../../assets/fonts/manrope/manrope-v15-latin-regular.woff2") format("woff2");
+  src: url("../assets/fonts/manrope/manrope-v15-latin-regular.woff2") format("woff2");
 }
 /* fraunces-600 - latin */
 @font-face {
@@ -93,7 +93,7 @@ svg {
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 600;
-  src: url("../../assets/fonts/fraunces/fraunces-v31-latin-600.woff2") format("woff2");
+  src: url("../assets/fonts/fraunces/fraunces-v31-latin-600.woff2") format("woff2");
 }
 h1,
 h2,
