@@ -202,7 +202,7 @@ span {
   translate: -35% 0;
   width: 13.563rem;
   height: 13.438rem;
-  background-image: url(../assets/images/bg-pattern-1.svg);
+  background-image: url(assets/images/bg-pattern-1.svg);
 }
 .hero::after {
   top: 50%;
@@ -210,7 +210,7 @@ span {
   translate: 45% -120%;
   width: 8.813rem;
   height: 7rem;
-  background-image: url(../assets/images/bg-pattern-2.svg);
+  background-image: url(assets/images/bg-pattern-2.svg);
 }
 .hero__headline {
   color: var(--color-white);
