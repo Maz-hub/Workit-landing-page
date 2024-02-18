@@ -1,0 +1,19 @@
+.button {
+  color: var(--color-dark-purple);
+  padding: 12px 21px 12px;
+  background-color: var(--color-eucaplyptus);
+  display: inline-block;
+  border: 2px solid var(--color-eucaplyptus);
+  transition-property: background-color, color;
+  transition: 250ms ease-in-out;
+
+  @media (min-width: 900px) {
+    padding: 13px 30px 17px;
+  }
+
+  &:hover {
+    color: var(--color-eucaplyptus);
+    background-color: transparent;
+    border: 2px solid var(--color-eucaplyptus);
+  }
+}

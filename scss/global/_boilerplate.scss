@@ -1,0 +1,79 @@
+// @use "../util/";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(
+    1rem,
+    0.9353448275862069rem + 0.27586206896551724vw,
+    1.125rem
+  );
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:active {
+  text-decoration: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  width: min(calc(100% - 2rem), 69.375rem);
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.curved {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 50% 0 0 0;
+    width: 100%;
+    height: 4vw;
+    background-image: url(/assets/images/Curved-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}

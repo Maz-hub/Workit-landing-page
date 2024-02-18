@@ -1,0 +1,29 @@
+.footer {
+  padding-block-end: 64px;
+
+  @media (min-width: 768px) {
+    padding-block-end: 120px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 58px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &__link {
+    &:hover {
+      path {
+        fill: var(--color-dark-purple);
+      }
+    }
+  }
+}

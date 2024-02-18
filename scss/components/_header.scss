@@ -1,0 +1,34 @@
+.header {
+  background-color: var(--color-dark-purple);
+  color: var(--color-white);
+  padding-block: 32px 64px;
+
+  @media (min-width: 900px) {
+    padding-block: 56px;
+  }
+
+  &__logo {
+    width: 6rem;
+    height: auto;
+  }
+
+  &__link {
+    color: var(--color-white);
+    transition: color 200ms ease-in-out;
+
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 12px;
+    text-decoration-color: var(--color-eucaplyptus);
+
+    &:hover {
+      color: var(--color-eucaplyptus);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

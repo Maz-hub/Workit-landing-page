@@ -1,0 +1,73 @@
+.features {
+  background-color: var(--color-ghost-white);
+  padding-block-start: clamp(
+    4rem,
+    3.170918367346939rem + 3.537414965986394vw,
+    5.625rem
+  );
+
+  padding-block-end: clamp(
+    4.375rem,
+    1.1862244897959187rem + 13.605442176870747vw,
+    10.625rem
+  );
+
+  &__wrapper {
+    display: grid;
+    gap: 40px 26px;
+    justify-content: center;
+
+    @media (min-width: 900px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    display: grid;
+    gap: 1rem 2rem;
+    justify-items: center;
+    text-align: center;
+
+    @media (900px >= width >= 600px) {
+      grid-template-columns: 48px auto;
+      grid-template-rows: auto auto;
+      text-align: left;
+      justify-items: start;
+      max-width: 35.813rem;
+    }
+  }
+
+  &__item-number {
+    font-family: "Fraunces", "Helvetica";
+    font-weight: 600;
+    line-height: 1.1;
+    margin-block-end: 1rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    font-size: 1.25rem;
+    font-size: clamp(
+      1.25rem,
+      1.1224489795918366rem + 0.5442176870748299vw,
+      1.5rem
+    );
+    border: 1px solid var(--color-davy-grey);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-grid;
+    place-items: center;
+
+    @media (min-width: 900px) {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  &__curved {
+    &::after {
+      background-image: url(/assets/images/Curved-hero_light.svg);
+    }
+  }
+}
