@@ -210,7 +210,7 @@ span {
   translate: 45% -120%;
   width: 8.813rem;
   height: 7rem;
-  background-image: url(assets/images/bg-pattern-2.svg);
+  background-image: url(../assets/images/bg-pattern-2.svg);
 }
 .hero__headline {
   color: var(--color-white);
@@ -286,7 +286,7 @@ span {
   }
 }
 .features__curved::after {
-  background-image: url(assets/images/Curved-hero_light.svg);
+  background-image: url(../assets/images/Curved-hero_light.svg);
 }
 
 .cta__wrapper {
